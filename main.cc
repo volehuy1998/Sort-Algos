@@ -153,8 +153,8 @@ void init(int arr[]) {
 }
 
 void plot(int arr[]) {
+	SDL_SetRenderDrawColor(renderer, 0xff, 0xff, 0xff, 0xff);
 	for (int i = 0; i < n; i++) {
-		SDL_SetRenderDrawColor(renderer, 0xff, 0xff, 0xff, 0xff);
 		SDL_RenderDrawLine(renderer, i, height, i, height - arr[i]);
 	}
 }
